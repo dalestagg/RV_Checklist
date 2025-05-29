@@ -1,0 +1,167 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Travel Trailer Ready to Travel Checklist</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      margin: 1rem;
+      padding: 0 0.5rem;
+    }
+    h1 {
+      text-align: center;
+      color: #2c3e50;
+    }
+    h2 {
+      margin-top: 2rem;
+      color: #34495e;
+    }
+    ul {
+      list-style: none;
+      padding-left: 1.2em;
+    }
+    li {
+      margin: 0.6em 0;
+    }
+    input[type="checkbox"] {
+      transform: scale(1.4);
+      vertical-align: middle;
+      margin-right: 0.5em;
+    }
+    .section {
+      border-left: 4px solid #3498db;
+      padding-left: 1em;
+      margin-bottom: 1.5em;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+      padding: 1em;
+    }
+    #resetBtn {
+      display: block;
+      margin: 2rem auto;
+      padding: 1em 2em;
+      font-size: 1rem;
+      background-color: #3498db;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    #resetBtn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>✅ Travel Trailer Ready to Travel Checklist</h1>
+
+  <button id="resetBtn">🔄 Reset Checklist</button>
+
+  <div id="checklist">
+
+    <div class="section">
+      <h2>🔌 Power & Electrical</h2>
+      <ul>
+        <li><label><input type="checkbox">Turn "OFF" Breakers Before Disconnecting Cords</label></li>
+        <li><label><input type="checkbox">Disconnect Shore Power Cord and Stow</label></li>
+        <li><label><input type="checkbox">Turn "OFF" Air Conditioners</label></li>
+    </div>
+
+    <div class="section">
+      <h2>💧 Water & Waste</h2>
+      <ul>
+        <li><label><input type="checkbox">Disconnect and Stow Fresh Water Hoses and Filters</label></li>
+        <li><label><input type="checkbox">Disconnect Sewer Hose</label></li>
+        <li><label><input type="checkbox">Close Black and Gray Tank Valves</label></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🏕️ Interior</h2>
+      <ul>
+        <li><label><input type="checkbox">Secure Cabinets, Drawers, and Doors</label></li>
+        <li><label><input type="checkbox">Lock Refrigerator and Freezer Doors</label></li>
+        <li><label><input type="checkbox">Clear Countertops and Secure Loose Items</label></li>
+        <li><label><input type="checkbox">Close Roof Vents and Windows</label></li>
+        <li><label><input type="checkbox">Secure Portable Air Fryer/Oven</label></li>
+        <li><label><input type="checkbox">Check That "ALL" Slides Are "IN"</label></li>
+        <li><label><input type="checkbox">Turn "OFF" Fans and Appliances</label></li>
+        <li><label><input type="checkbox">Secure TV, Electronics, and Valuables</label></li>
+        <li><label><input type="checkbox">Secure Bathroom Shower Door and Lock</label></li>
+        <li><label><input type="checkbox">Strap Down Recliners</label></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🧰 Exterior</h2>
+      <ul>
+        <li><label><input type="checkbox">Retract Awning</label></li>
+        <li><label><input type="checkbox">Compartment Doors Closed and Secure</label></li>
+        <li><label><input type="checkbox">Turn "OFF" Propane at Main Valve</label></li>
+        <li><label><input type="checkbox">Remove and Stow Wheel Checks (if applicable)</label></li>
+        <li><label><input type="checkbox">Remove Portable Deck and Stairs</label></li>
+        <li><label><input type="checkbox">Remove Any Campsite Gear (mats, signs, etc)</label></li>
+        <li><label><input type="checkbox">Ensure Entry Steps Are Retracted</label></li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>🚙 Hitching & Tow Vehicle</h2>
+      <ul>
+        <li><label><input type="checkbox">Inspect and Connect Hitch Properly</label></li>
+        <li><label><input type="checkbox">Connect Safety Chains In a Criss-Cross Pattern</label></li>
+        <li><label><input type="checkbox">Attach Breakaway Cable</label></li>
+        <li><label><input type="checkbox">Connect 7-Pin Trailer Plug to Truck</label></li>
+        <li><label><input type="checkbox">Test Trailer Lights: Brake, Turn, Tail, and Reverse</label></li>
+        <li><label><input type="checkbox">Inflate Tires to Corrrect PSIG (truck and trailer)</label></li>
+        <li><label><input type="checkbox">Inflate/Deflate Hitch as Needed to Center Marker in Window</label></li>
+        <li><label><input type="checkbox">Verify "ALL" Jacks are in Fully "UP" Position</label></li>
+        <li><label><input type="checkbox">Adjust Mirrors for Travel</label></li>
+       </ul>
+    </div>
+
+    <div class="section">
+      <h2>👣 Final Walk-Around</h2>
+      <ul>
+        <li><label><input type="checkbox">Perform a Complete Walk-Around Visual Inspection</label></li>
+        <li><label><input type="checkbox">Look Under Trailer for Leaks or Hanging Cables</label></li>
+        <li><label><input type="checkbox">Lock Trailer Deadbolt and Regular Door Lock</label></li>
+        <li><label><input type="checkbox">Remove Any and "ALL" Trash Around Campground</label></li>
+        <li><label><input type="checkbox">Walkie Talkie Radios and Turned "ON" and Radio Check Performed</label></li>
+      </ul>
+    </div>
+
+  </div>
+
+  <script>
+    document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+      cb.addEventListener('change', function () {
+        if (this.checked) {
+          this.closest('li').style.display = 'none';
+        }
+      });
+    });
+
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      document.querySelectorAll('input[type="checkbox"]').forEach(cb => {
+        cb.checked = false;
+        cb.closest('li').style.display = '';
+      });
+    });
+  </script>
+
+</body>
+</html>
